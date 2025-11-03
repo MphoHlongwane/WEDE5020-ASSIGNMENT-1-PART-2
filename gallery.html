@@ -1,24 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* full screen height */
-      margin: 0;
-    }
-    img {
-      max-width: 300px; /* keeps image from being too large */
-      height: auto;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery — NMP MultiProjects</title>
+<meta name="description" content="Gallery of NMP activities and events.">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <img src="_images/download.jpg" alt="NMP Multi Projects Logo">
+<header class="site-header container">
+<a href="index.html" class="logo"><img src="_images/logo.png" alt="NMP logo"></a>
+<nav class="main-nav" aria-label="Main Navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+
+<main class="container">
+<h1>Gallery</h1>
+<p>Photos from recent events and community projects.</p>
+
+
+<div class="gallery" id="gallery">
+<!-- images are loaded here by JS from _images folder listing (or static list below) -->
+<a href="_images/images (1).jpg" class="lightbox"><img src="_images/Project image 2.webp" alt="Event 1"></a>
+</div>
+
+
+<!-- Lightbox container (hidden by default) -->
+<div id="lightbox" class="lightbox-overlay" aria-hidden="true">
+<button id="lightboxClose" class="lightbox-close">Close</button>
+<img id="lightboxImg" src="" alt="">
+</div>
+
+
+</main>
+<script src="js/scripts.js"></script>
 </body>
 </html>

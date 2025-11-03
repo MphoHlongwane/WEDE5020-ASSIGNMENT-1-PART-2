@@ -1,58 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NMP Multi Projects</title>
-  <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — NMP MultiProjects</title>
+<meta name="description" content="Services offered by NMP MultiProjects.">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<header class="site-header">
+<div class="container">
+<a href="index.html" class="logo"><img src="_images/logo.png" alt="NMP logo"></a>
+<nav class="main-nav" aria-label="Main Navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-  <header>
-    <img src="_images/download.jpg" alt="NMP Multi Projects Logo" width="100">
-    <h1>NMP Multi Projects</h1>
-    <p>Excellence in Execution.</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact_us.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>NMP Multi Projects — Empowering and growing Black businesses by providing workshops and programs to improve skills and development.</p>
-    </section>
+<main class="container">
+<h1>Our Services</h1>
 
-    <section>
-      <h2>Our Mission</h2>
-      <p>To empower and grow Black-owned businesses by providing mentorship, funding, and development programs that strengthen entrepreneurship.</p>
-    </section>
 
-    <section>
-      <h2>What We Offer</h2>
-      <p>Planning and developing a business? We’ve got you covered. Our services include:</p>
-      <ul>
-        <li>Funding opportunities</li>
-        <li>Access to capital</li>
-        <li>Business mentorship</li>
-        <li>Development resources and training</li>
-      </ul>
-    </section>
-  </main>
+<div class="search-sort">
+<input id="serviceSearch" type="search" placeholder="Search services..." aria-label="Search services">
+<select id="serviceSort" aria-label="Sort services">
+<option value="default">Sort by</option>
+<option value="alpha">Alphabetical</option>
+</select>
+</div>
 
-  <footer>
-    <p>
-      Contact us: 
-      <a href="mailto:NMPMultiProjects@projects.co.za">NMPMultiProjects@projects.co.za</a> | 
-      <a href="tel:+27118609949">011 860 9949</a>
-    </p>
-    <p>&copy; 2025 NMP Multi Projects. All rights reserved.</p>
-  </footer>
 
+<ul id="servicesList" class="list">
+<!-- dynamically filled by js -->
+</ul>
+
+
+</main>
+<script src="js/scripts.js"></script>
 </body>
 </html>
